@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Galeri UAS</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Galeri Gambar UAS Komputasi Awan</h1>
+        <% if (loggedin) { %>
+            <a href="/logout" class="auth-button">Logout</a>
+        <% } else { %>
+            <a href="/login" class="auth-button">Login untuk Mengelola</a>
+        <% } %>
+    </header>
+
+    <% if (loggedin) { %>
+    <div class="upload-form">
+        <h2>Upload Gambar Baru (Create)</h2>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="gambar" required>
+            <button type="submit">Upload</button>
+        </form>
+    </div>
+    <% } %>
+
+    <main class="gallery">
+        <h2>Koleksi Gambar</h2>
+        <% if (images.length === 0) { %>
+            <p>Belum ada gambar yang diupload.</p>
+        <% } else { %>
+            <% images.forEach(function(image) { %>
+                <div class="gallery-item">
+                    <img src="/uploads/<%= image %>" alt="Gambar">
+                    <% if (loggedin) { %>
+                        <form action="/delete/<%= image %>" method="post">
+                            <button type="submit" class="delete-btn">Hapus (Delete)</button>
+                        </form>
+                    <% } %>
+                </div>
+            <% }); %>
+        <% } %>
+    </main>
+</body>
+</html>

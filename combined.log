@@ -1,0 +1,17 @@
+{"level":"info","message":"Server berjalan di http://localhost:3000","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"User 'admin' berhasil login.","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"User logged out.","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"User 'admin' berhasil login.","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"User logged out.","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"User 'admin' berhasil login.","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"Gambar baru diupload: 1760287243853.png","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
+{"level":"info","message":"File 1760287243853.png berhasil dihapus.","service":"user-service"}
+{"level":"info","message":"Landing page diakses","service":"user-service"}
