@@ -1,0 +1,12 @@
+# Helper scripts
+populate_risk_register.py
+
+# Node modules
+node_modules/
+
+# Logs
+*.log
+
+# IDE
+.idea/
+*.iml
